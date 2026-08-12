@@ -23,13 +23,15 @@ pip install scikit-learn joblib
 from categorize import predict_category, get_categories
 
 print(get_categories())
-# ['Dining', 'Entertainment', 'Fees', 'Groceries', 'Healthcare', 'Income',
-#  'Rent', 'Shopping', 'Subscriptions', 'Transfer', 'Transportation', 'Utilities']
+# ['Education', 'Entertainment', 'Fees', 'Groceries', 'Healthcare', 'Income',
+#  'Insurance', 'Mortgage', 'Personal Care', 'Rent', 'Restaurants', 'Shopping',
+#  'Subscription', 'Transfer', 'Transportation', 'Travel', 'Utilities']
 
 result = predict_category("STARBUCKS STORE #221")
 print(result)
-# {'category': 'Dining', 'confidence': 0.9326}
+# {'category': 'Restaurants', 'confidence': 0.93}
 ```
+
 
 ### Handling invalid input
 
